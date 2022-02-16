@@ -16,8 +16,21 @@ For developling it I used Flask Framework
 3) Keep all .css, .js & image files in "Static" folder
 
 # Steps to Run =>
-1) execute ".\Scripts\activate" file
+1) execute ".\Scripts\activate" file	=> To activate your programming environment
 2) execute below commands from Project Terminal =>
     set FLASK_ENV=development  => for Development environment
     set FLASK_APP=Server.py
     flask run
+
+# About FLASK Framework =>
+Flask is a small and lightweight Python web framework that provides useful tools and features that make creating web applications in Python easier. It gives developers flexibility and is a more accessible framework for new developers since you can build a web application quickly using only a single Python file. Flask is also extensible and doesn’t force a particular directory structure.
+
+By using below pip command we can install Flask 
+	pip install flask
+
+
+http://127.0.0.1:5000/
+or
+http://localhost:5000/
+
+Press CTRL+C to quit
