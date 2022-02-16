@@ -5,9 +5,10 @@ For developling it I used Flask Framework
 
 # Technology used -
 1) Python 
-2) HTML - defined Content & Text
-3) CSS - Styling of Website
-4) JS - Actions
+2) FLASK Framework
+3) HTML - defined Content & Text
+4) CSS - Styling of Website
+5) JS - Actions
 
 # Key-Points =>
 1) Server.py is the Python main file
