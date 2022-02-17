@@ -15,6 +15,8 @@ def html_page(page_name):
 def submit_form():
     if request.method == 'POST':
         data = request.form.to_dict()
+#       write_to_file(data)        
+        write_to_csv(data)
         return redirect('/thankyou.html')
     else:
         return 'Something went wrong, Try Again!'
@@ -32,8 +34,8 @@ def write_to_csv(data):
     subject= data["subject"]
     message = data["message"]
     
-    csv_writer = csv.writer(csv_database, delimiter=',',
-                            quotechar='', quoting=csv.QUOTE_MINIMAL)
+    csv_writer = csv.writer(csv_database, delimiter=',',  newline='',
+                            quotechar='"', quoting=csv.QUOTE_MINIMAL)
     csv_writer.writerow([email, subject, message])
     
 # @app.route('/<username>')                                 # Variable
