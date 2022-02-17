@@ -1,10 +1,15 @@
 from flask import Flask, render_template, url_for, request, redirect
 import csv
+import sqlite3
 
 app = Flask(__name__)
 
 @app.route('/')
 def my_home():                              # Keep all .html files in "Templates" folder
+    # conn = get_db_connection()
+    # posts = conn.execute('SELECT * FROM contacts').fetchall()
+    # conn.close()
+    # return render_template('index.html', contacts=contacts)
     return render_template('index.html')    # Keep all .css, .js & image files in "Static" folder
 
 @app.route('/<string:page_name>')
@@ -37,7 +42,14 @@ def write_to_csv(data):
     csv_writer = csv.writer(csv_database, delimiter=',',  newline='',
                             quotechar='"', quoting=csv.QUOTE_MINIMAL)
     csv_writer.writerow([email, subject, message])
+
     
+def get_db_connection():
+    conn = sqlite3.connect('database.db')
+    conn.row_factory = sqlite3.Row
+    return conn    
+
+
 # @app.route('/<username>')                                 # Variable
 # def user(username=None):
 #     return render_template('about.html', name=username)
