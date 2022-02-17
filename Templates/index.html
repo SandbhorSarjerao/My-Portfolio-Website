@@ -57,7 +57,11 @@
                 <div class="text-content">
                   <h1>Hello,<br>
                     <span id="typed-strings">
-                      <h1>Welcome to Sarjerao's Portfolio</h1>
+                      {% extends 'base.html' %}
+
+                      {% block content %}
+                        <h1>{% block title %} Welcome to Sarjerao's Portfolio {% endblock %}</h1>
+                      {% endblock %}
                       <span>I'm Sarjerao</span>
                       <span>A Python Developer</span>
                       <span>Working as a Python Developer</span>
