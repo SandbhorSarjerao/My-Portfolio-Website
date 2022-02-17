@@ -11,12 +11,12 @@ For developling it I used Flask Framework
 5) JS - Actions
 
 # Key-Points =>
-1) Server.py is the Python main file
+1) Server.py is the Python main file, use this file to run FLASK as FLASK_APP=Server.py
 2) Keep all .html files in "Templates" folder
 3) Keep all .css, .js & image files in "Static" folder
 4) Create ENV folder by below command
    - cd project-folder
-   - python -m venv <<project-folder-name>>
+   - python -m venv project-folder-name
 
 # Steps to Run =>
 1) execute ".\Scripts\activate" file	=> To activate your programming environment
