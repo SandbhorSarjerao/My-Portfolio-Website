@@ -1,7 +1,7 @@
 # My-Portfolio-Website
 
 This is My Portfolio Website , I developed it using Python language.
-For developling it I used Flask Framework
+For developling it I used Flask Framework.
 
 # Technology used -
 1) Python 
