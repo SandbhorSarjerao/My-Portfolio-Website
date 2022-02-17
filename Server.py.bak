@@ -53,7 +53,7 @@ def get_db_connection():
 # @app.route('/<username>')                                 # Variable
 # def user(username=None):
 #     return render_template('about.html', name=username)
-
+#
 # @app.route('/<username>/<int:user_id>')                   # Variable
 # def user_id(username=None, user_id=None):
 #     return render_template('about.html', name=username, user_id=user_id)
@@ -68,4 +68,6 @@ def get_db_connection():
 
 # @app.route('/contact')
 # def contact():
-#    return render_template('contact.html')
+#        return render_template('contact.html')
+
+
