@@ -14,6 +14,9 @@ For developling it I used Flask Framework
 1) Server.py is the Python main file
 2) Keep all .html files in "Templates" folder
 3) Keep all .css, .js & image files in "Static" folder
+4) Create ENV folder by below command
+   - cd project-folder
+   - python -m venv <<project-folder-name>>
 
 # Steps to Run =>
 1) execute ".\Scripts\activate" file	=> To activate your programming environment
@@ -36,4 +39,6 @@ http://localhost:5000/
 Press CTRL+C to quit
 
 # Document Reference =>
-1) https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
+1) https:/xkcd.com
+2) www.mashup-template.com/	
+3) https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
