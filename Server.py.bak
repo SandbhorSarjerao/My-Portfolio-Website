@@ -49,11 +49,24 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn    
 
+@app.route('/<int:contacts_id>')
+def post(contacts_id):
+    post = get_contacts(contacts_id)
+    return render_template('.html', contacts=contacts)
+    
+def get_contacts(contacts_id):
+    conn = get_db_connection()
+    contacts = conn.execute('SELECT * FROM contacts WHERE id = ?',
+                        (contacts_id,)).fetchone()
+    conn.close()
+    if contacts is None:
+        abort(404)
+    return contacts
 
 # @app.route('/<username>')                                 # Variable
 # def user(username=None):
 #     return render_template('about.html', name=username)
-#
+
 # @app.route('/<username>/<int:user_id>')                   # Variable
 # def user_id(username=None, user_id=None):
 #     return render_template('about.html', name=username, user_id=user_id)
@@ -68,6 +81,4 @@ def get_db_connection():
 
 # @app.route('/contact')
 # def contact():
-#        return render_template('contact.html')
-
-
+#    return render_template('contact.html')
