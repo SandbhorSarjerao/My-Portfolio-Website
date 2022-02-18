@@ -16,7 +16,7 @@ For developling it I used Flask Framework.
 3) Keep all .css, .js & image files in "Static" folder
 4) Create ENV folder by below command
    - cd project-folder
-   - python -m venv project-folder-name
+   - python -m venv ./
 
 # Steps to Run =>
 1) execute ".\Scripts\activate" file	=> To activate your programming environment
