@@ -16,7 +16,7 @@ For developling it I used Flask Framework.
 3) Keep all .css, .js & image files in "Static" folder
 4) Create ENV folder by below command
    - cd project-folder
-   - python -m venv project-folder-name
+   - python -m venv ./
 
 # Steps to Run =>
 1) execute ".\Scripts\activate" file	=> To activate your programming environment
@@ -28,8 +28,8 @@ For developling it I used Flask Framework.
 # About FLASK Framework =>
 Flask is a small and lightweight Python web framework that provides useful tools and features that make creating web applications in Python easier. It gives developers flexibility and is a more accessible framework for new developers since you can build a web application quickly using only a single Python file. Flask is also extensible and doesn’t force a particular directory structure.
 
-By using below pip command we can install Flask 
-	pip install flask
+Within the activated environment, By using below pip command we can install Flask =>
+ pip install flask
 
 
 http://127.0.0.1:5000/
@@ -40,6 +40,8 @@ Press CTRL+C to quit
 
 # Document Reference =>
 1) https://xkcd.com/
-2) www.mashup-template.com/	
-3) https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
-4) https://docs.python.org/3/library/csv.html
+2) www.mashup-template.com/
+3) https://flask.palletsprojects.com/en/2.0.x/installation/
+4) https://flask.palletsprojects.com/en/2.0.x/quickstart/	
+5) https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
+6) https://docs.python.org/3/library/csv.html
