@@ -5,7 +5,7 @@ For developling it I used Flask Framework.
 
 # Technology used -
 1) Python 
-2) FLASK Framework
+2) FLASK Framework - pip install Flask
 3) HTML - defined Content & Text - use HTML to display information for the visitor/on the web browser.
 4) CSS - Styling of Website
 5) JS - Actions
@@ -16,24 +16,23 @@ For developling it I used Flask Framework.
 3) Keep all .css, .js & image files in "Static" folder
 4) Create ENV folder by below command
    - cd project-folder
-   - python -m venv ./
+   - python -m venv ./                 => virtual environment to manage the dependencies for this project
 
 # Steps to Run =>
-1) execute ".\Scripts\activate" file	=> To activate your programming environment
+1) execute ".\Scripts\activate.bat" file	=> To activate your programming environment
 2) execute below commands from Project Terminal =>
     set FLASK_ENV=development  => for Development environment
     set FLASK_APP=Server.py
-    flask run   or    flask run -p 5001
+    flask run       or      flask run -p 5001      or       python -m flask run
+
+# Server IP Address & Port =>
+http://127.0.0.1:5000/
 
 # About FLASK Framework =>
 Flask is a small and lightweight Python web framework that provides useful tools and features that make creating web applications in Python easier. It gives developers flexibility and is a more accessible framework for new developers since you can build a web application quickly using only a single Python file. Flask is also extensible and doesn’t force a particular directory structure.
 
 Within the activated environment, By using below pip command we can install Flask =>
- pip install flask
-
-
-http://127.0.0.1:5000/
-or
+ pip install flaskor
 http://localhost:5000/
 
 Press CTRL+C to quit
