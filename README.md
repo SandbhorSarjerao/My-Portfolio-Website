@@ -20,6 +20,10 @@ For developling it I used Flask Framework.
 
 # Steps to Run =>
 1) execute ".\Scripts\activate.bat" file	=> To activate your programming environment
+   If below error =
+         Error => Activate.ps1 cannot be loaded because running scripts is disabled on this system.
+   Then execute below command =>  
+         Set-ExecutionPolicy Restricted     or    "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser"
 2) execute below commands from Project Terminal =>
     set FLASK_ENV=development  => for Development environment
     set FLASK_APP=Server.py
